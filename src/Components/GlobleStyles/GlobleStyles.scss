@@ -6,8 +6,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body {
+html {
   background-color: blue;
+  scroll-behavior: smooth;
 }
 /*Color and styling*/
 :root {
@@ -22,6 +23,7 @@ body {
   --inputColor: rgb(239, 239, 239);
   --bodyColor: rgb(240, 240, 246);
   --cardBG: rgb(225, 225, 235;);
+  --cardHover: rgb(255, 255, 255);
 }
 a {
   text-decoration: none;
@@ -84,4 +86,23 @@ input {
 
 body {
   background: var(--bodyColor);
+}
+
+//Media queries
+
+@media screen and (min-width: 1240px) {
+  .container {
+    width: 80% !important;
+    margin: auto !important;
+  }
+
+  .section {
+    padding: 6rem 0 4rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  body {
+    zoom: 1.7;
+  }
 }

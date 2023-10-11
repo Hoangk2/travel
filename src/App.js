@@ -1,13 +1,12 @@
 import React from 'react';
-import './App.css';
 import { Navbar, Home, Main, Footer } from '~/Components';
 function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Home />
+      <Home />
       <Main />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
